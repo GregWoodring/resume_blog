@@ -55,7 +55,7 @@ let Header = props => {
                 </Link>
             </div>
 
-            <div className={`menu-item ${location === '/about' ? 'menu-item-current' : ''}`}>
+            {/* <div className={`menu-item ${location === '/about' ? 'menu-item-current' : ''}`}>
                 <Link 
                     to='/about'
                     onClick={e => setLocation('/about')}>
@@ -64,8 +64,23 @@ let Header = props => {
                         icon={faUser} />
                     About Me
                 </Link>
+            </div> */}
+            <div className='menu-control'>
+                {showMenu ?
+                    <FontAwesomeIcon 
+                        onClick={() => {
+                            setShowMenu(false)
+                        }}
+                        className='icon'
+                        icon={faChevronUp} /> :
+                    <FontAwesomeIcon 
+                        onClick={() => {
+                            setShowMenu(true)
+                        }}
+                        className='icon'
+                        icon={faChevronDown} /> 
+                }
             </div>
-
             <div className={`menu-item ${location === '/download' ? 'menu-item-current' : ''}`}>
             <a 
                     href={resume}
@@ -84,22 +99,7 @@ let Header = props => {
                     Download Resume
                 </Link> */}
             </div>
-            <div className='menu-control'>
-                {showMenu ?
-                    <FontAwesomeIcon 
-                        onClick={() => {
-                            setShowMenu(false)
-                        }}
-                        className='icon'
-                        icon={faChevronUp} /> :
-                    <FontAwesomeIcon 
-                        onClick={() => {
-                            setShowMenu(true)
-                        }}
-                        className='icon'
-                        icon={faChevronDown} /> 
-                }
-            </div>
+            
         </header>
     )
 }

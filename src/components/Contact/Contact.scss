@@ -1,0 +1,135 @@
+@import '../../styles/variables.scss';
+
+.contact{
+    margin-top: 0em;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: $screen-large){
+        margin-top: .5em;
+
+    }
+}
+
+.link-buttons{
+    @media (min-width: $screen-medium){
+
+    }
+
+    @media (min-width: $screen-large){
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.contact-container{
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 1em;
+    padding: 2em;
+    width: 90%;
+}
+
+.contact-title{
+    color: #fff;
+    text-align: center;
+    padding: .5em 1em;
+    border-radius: 20px;
+    background-color: $blue;
+    margin: 3em .5em 1em .5em;
+    font-family: $title-font;
+    //width: 80%;
+
+    @media (min-width: $screen-large){
+        margin-top: .5em;
+
+    }
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+    //font-family: $paragraph-font;
+    color: $dark-grey;
+    //border-bottom: $blue 2px solid;
+
+    h4{
+        width: 6em;
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: .8rem;
+        font-family: $paragraph-font;
+    }
+
+    .icon{
+        background-color: $blue;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        padding: .25em;
+        color: #fff;
+        font-size: 1.5rem;
+        margin-right: .5em;
+    }
+
+    h4{
+        padding-right: .5em;
+    }
+}
+
+.github-button{
+    background-color: $github-orange;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    padding: .5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5em 1em;
+    img{
+        padding-right: .5em;
+    }
+
+    transition: all ease-in-out .5s; 
+}
+
+.github-button:hover{
+    color: $github-orange;
+    background-color: #fff;
+    box-shadow: 0 0 10px $github-orange;
+    transition: all ease-in-out .5s; 
+}
+
+.linkedin-button{
+    background-color: $linkedin-blue;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    padding: .5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5em 1em;
+    transition: all ease-in-out .5s;
+
+    img{
+        padding-right: .5em;
+    }
+}
+
+.linkedin-button:hover{
+    color: $linkedin-blue;
+    background-color: #fff;
+    box-shadow: 0 0 10px $linkedin-blue;
+    transition: all ease-in-out .5s;
+}
