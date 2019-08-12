@@ -4,23 +4,49 @@
     position: fixed;
     top:0;
     left:0;
-    height: 7vh;
+    
     width:100vw;
     background-color: $dark-grey;
     border-bottom: 2px solid $blue;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    .header-menu{
+        //color: #fff;
+        //background-color: $blue;
+        padding: .5em;
+        //border-radius: 50%;
+    }
+    
+    @media (min-width: $screen-large){
+        height: 7vh;
+        flex-direction: row;
+        align-items: flex-end;
+
+        div:last-child{
+            margin-left: auto;
+        }
+
+        .header-menu{
+            display: none;
+        }
+    }
 }
 
+
+
+
 .menu-item{
-    width: 25%;
+    //width: 30%;
     height: 90%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    //justify-content: center;
+    //align-items: center;
     //padding: 0 .5em;
-    margin: 0 1em;
-    border-radius: 10px 10px 0 0;
+    //margin: -.1em 1em;
+    //border-radius: 10px 10px 0 0;
+    transition: all linear .5s;
     a{
         text-decoration: none;
         padding: .5em;
@@ -42,7 +68,7 @@
     }
 
     @media (min-width: $screen-large){
-        width: 12%;
+        //width: 12%;
         height: 90%;
         display: flex;
         justify-content: center;
@@ -68,9 +94,12 @@
     }
 }
 
+
+
 .menu-item-current{
     background-color: $blue;
-    border-radius: 10px 10px 0 0;
+    width: 100%;
+    //border-radius: 10px 10px 0 0;
     a{
         
         border-bottom: 2px solid #fff;
@@ -78,7 +107,16 @@
             color: #fff;
         }
     }
-    color: #fff
+    color: #fff;
+    @media (min-width: $screen-medium){
+        // border-radius: 10px 10px 0 0;
+        // width: auto;
+    }
+
+    @media (min-width: $screen-large){
+        border-radius: 10px 10px 0 0;
+        width: auto;
+    }
 }
 
 .menu-item:hover{
@@ -97,3 +135,30 @@
     
 }
 
+.menu-control{
+    position: absolute;
+    bottom: -1.25em;
+    left: calc(50% - 1.25em);
+    width: 2.5em;
+    height: 1.25em;
+    background-color: $dark-grey;
+    border: 2px solid $blue;
+    border-radius: 0 0 10px 10px;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    //padding: .5em;
+    @media (min-width: $screen-large){
+        display: none;
+    }
+}
+
+.hide-menu{
+    
+    .menu-item{
+        display: none;
+        transition: all .5 linear;
+    }
+}

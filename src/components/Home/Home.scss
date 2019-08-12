@@ -1,0 +1,95 @@
+@import '../../styles/variables.scss';
+
+html{
+    // width: 100vw;
+    // height: 100vh;
+    background-color: $blue-transluscent;
+}
+
+.profile{
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.profile-picture{
+    font-family: $paragraph-font;
+    color: $dark-grey;
+    //background-color: $blue;
+    padding: 2em;
+    text-align: center;
+    img{
+        border-radius: 50%;
+        //border: 4px solid $dark-grey;
+    }
+
+    h3{
+        border-bottom: solid 2px $blue;
+    }
+    h4{
+        padding-top: .5em;
+    }
+}
+
+.link-buttons{
+    @media (min-width: $screen-medium){
+
+    }
+
+    @media (min-width: $screen-large){
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.github-button{
+    background-color: $github-orange;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    padding: .5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5em 1em;
+    img{
+        padding-right: .5em;
+    }
+
+    transition: all ease-in-out .5s; 
+}
+
+.github-button:hover{
+    color: $github-orange;
+    background-color: #fff;
+    box-shadow: 0 0 10px $github-orange;
+    transition: all ease-in-out .5s; 
+}
+
+.linkedin-button{
+    background-color: $linkedin-blue;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    padding: .5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5em 1em;
+    transition: all ease-in-out .5s;
+
+    img{
+        padding-right: .5em;
+    }
+}
+
+.linkedin-button:hover{
+    color: $linkedin-blue;
+    background-color: #fff;
+    box-shadow: 0 0 10px $linkedin-blue;
+    transition: all ease-in-out .5s;
+}
