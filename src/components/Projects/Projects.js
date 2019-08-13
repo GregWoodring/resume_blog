@@ -5,7 +5,7 @@ import './Projects.scss';
 let Projects = props => {
     const [showNewPlaylist, setShowNewPlaylist] = useState(false);
     return (
-        <body>
+        <main>
             <h1>My Projects</h1>
             <div className='project-item'>
             <h2 className='item-header'><a href='http://newplaylist.gregwoodring.com'>New Playlist</a></h2>
@@ -18,7 +18,9 @@ let Projects = props => {
                     >
                         {showNewPlaylist ? 'Hide App' : 'Show App'}
                     </button>
-                    <iframe src='http://newplaylist.gregwoodring.com' />
+                    <iframe 
+                        title='newPlaylist'
+                        src='http://newplaylist.gregwoodring.com' />
                     </div>
                     <div className='info-column'>
                         
@@ -67,7 +69,7 @@ let Projects = props => {
                     </div>
                 </div>
             </div>
-        </body>
+        </main>
     )
 }
 

@@ -2,9 +2,9 @@ import React from 'react';
 
 let About = props => {
     return(
-        <body>
-            
-        </body>
+        <main>
+
+        </main>
     )
 }
 

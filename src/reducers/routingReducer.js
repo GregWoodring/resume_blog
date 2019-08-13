@@ -3,7 +3,7 @@ let intialState = {
 }
 
 function reducer(state = intialState, action){
-    const { type, payload, meta } = action;
+    const { type } = action;
 
     switch(type){
         default:
