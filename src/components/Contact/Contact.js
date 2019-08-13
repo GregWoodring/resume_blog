@@ -24,7 +24,7 @@ let Contact = props => {
                         icon={faAddressBook} />
                     <h4>Address: </h4>
                     <p>1076 Lancelot Dr. <br />
-                        Muskegon Mi, 49445</p>
+                        Muskegon MI, 49445</p>
                 </div>
 
                 <div className='contact-item'>

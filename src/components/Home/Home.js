@@ -12,7 +12,7 @@ let Home = props => {
                     <img src={profilePic} alt='portrait of Greg Woodring' />
                     <h3>Greg James Woodring</h3>
                     <h4>
-                        Full Web Stack Developer and Financial Profesional
+                        Full Web Stack Developer and Financial Professional
                     </h4>
                 </div>
             </div>
@@ -24,7 +24,7 @@ let Home = props => {
                     GitHub
                 </a>
                 <a 
-                    href='https://github.com/GregWoodring'
+                    href='https://www.linkedin.com/in/greg-woodring/'
                     className='linkedin-button'>
                     <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCAkTNjnZBcOTAAABGUlEQVRIx+2UsWoCQRCGv4tiTgkIPoAYq6BpUsTC2hfwDay0SCEIFvaWFkEhpEqRNm2KNKnFwhAQS7HQNxAE0dymWeY88dRVQQmZbYa53e9m/tkdC8VBdnHY8T8BCC75Dm90uaZA2AShZBV1JMtiKbptiTMjJNDv3QGuBkFs8a/2K+FZK1I2KEBZnps4pEeSW5P/ewHbcrU2t7HGAACbV+CDFx2vkKDOOyMiZKmS89PgXiRUKFqyo0Hck/Pj+jb6AyIrWQf4WtdGf5sSIENKFPih6X7cBRClTYc+TxL5NAM86OJKJHRkzNwEkBb5bkT4iQnAfSPuFXdMABvtH3DkoZrnDoBLANIyI5OyI0dMezK9TObBmWpwesAvzk6OwFE7eQsAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDgtMDlUMTc6NTQ6NTcrMDI6MDC/Rh0jAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTA4LTA5VDE3OjU0OjU3KzAyOjAwzhulnwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=' 
                     alt='linkedin icon' />
