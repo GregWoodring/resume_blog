@@ -11,7 +11,7 @@ let Projects = props => {
             <h2 className='item-header'><a href='http://newplaylist.gregwoodring.com'>New Playlist</a></h2>
                 <div className='item-body'>
                     <div className={'iframe-display ' + (showNewPlaylist ? 'show-iframe' : 'hide-iframe')}>
-                    <button
+                    {/* <button
                         onClick={ () => {
                             setShowNewPlaylist(!showNewPlaylist);
                         }}
@@ -20,8 +20,8 @@ let Projects = props => {
                     </button>
                     <iframe 
                         title='newPlaylist'
-                        src='http://newplaylist.gregwoodring.com' />
-                    </div>
+                        src='http://newplaylist.gregwoodring.com' />*/}
+                    </div> 
                     <div className='info-column'>
                         
                         <div className='project-information'>
