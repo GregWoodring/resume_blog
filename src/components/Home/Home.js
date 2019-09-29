@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../styles/icons/github-brands.svg'
-import profilePic from '../../styles/assets/profilepic.jpeg'
 import './Home.scss';
 
 let Home = props => {
@@ -9,7 +8,7 @@ let Home = props => {
             
             <div className='profile'>
                 <div className='profile-picture'>
-                    <img src={profilePic} alt='portrait of Greg Woodring' />
+                    <img src='https://i.imgur.com/FgopB7E.jpg' alt='portrait of Greg Woodring' />
                     <h3>Greg James Woodring</h3>
                     <h4>
                         Full Web Stack Developer and Financial Professional

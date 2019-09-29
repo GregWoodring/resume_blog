@@ -18,14 +18,14 @@ let Contact = props => {
                     <p>231-288-7228</p>
                 </div>
 
-                <div className='contact-item'>
+                {/* <div className='contact-item'>
                     <FontAwesomeIcon 
                         className='icon'
                         icon={faAddressBook} />
                     <h4>Address: </h4>
-                    <p>1076 Lancelot Dr. <br />
+                    <p>412 North  <br />
                         Muskegon MI, 49445</p>
-                </div>
+                </div> */}
 
                 <div className='contact-item'>
                     <FontAwesomeIcon 

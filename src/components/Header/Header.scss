@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .header{
-    position: fixed;
+    position: relative;
     top:0;
     left:0;
     z-index: 100;
@@ -129,6 +129,8 @@
     a{
         border-bottom: 2px solid #fff;
         transition: border-bottom ease .5s;
+        width:100%;
+        text-align: left;
         .icon{
             color: #fff;
             transition: color linear .5s;
