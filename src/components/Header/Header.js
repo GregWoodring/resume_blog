@@ -31,7 +31,7 @@ let Header = props => {
                 </Link>
             </div>
             
-            <div className={`menu-item ${location === '/projects' ? 'menu-item-current' : ''}`}>
+            {/* <div className={`menu-item ${location === '/projects' ? 'menu-item-current' : ''}`}>
                 <Link 
                     to='/projects'
                     onClick={e => setLocation('/projects')}>
@@ -40,7 +40,7 @@ let Header = props => {
                         icon={faProjectDiagram} />
                     Projects
                 </Link>
-            </div>
+            </div> */}
 
             <div className={`menu-item ${location === '/contact' ? 'menu-item-current' : ''}`}>
                 <Link 
